@@ -2279,7 +2279,7 @@ def app_header(bp: str) -> None:
     with st.container():
         st.markdown(
             f"""
-<div class="card" style="padding:14px 14px; margin-bottom:8px; margin-left:30px;margin-right:28px">
+<div class="card" style="padding:14px 14px; margin-bottom:8px;">
   <div style="display:flex; justify-content:space-between; align-items:center; gap:12px; flex-wrap:wrap;">
     <div>
       <div style="display:flex; align-items:center; gap:10px;">
