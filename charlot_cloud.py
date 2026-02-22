@@ -126,11 +126,12 @@ PAGES = [
     ("📚", "Dictionary"),
     ("🧠", "Review"),
     ("🗂️", "Cards"),
-    ("📝", "Note"),
+    ("📝", "Notes"),
     ("📘", "Grammar"),
     ("🔁", "Import"),
     ("⚙️", "Settings"),
-    ("❓", "About Charlot"),
+    ("❓", "About"),
+    (" ", " ")
 ]
 
 # =========================
@@ -4968,7 +4969,7 @@ def main() -> None:
         review_page()
     elif nav == "Cards":
         manage_cards_page()
-    elif nav == "Note":
+    elif nav == "Notes":
         notebook_page()
     elif nav == "Grammar":
         grammar_page()
@@ -4976,7 +4977,7 @@ def main() -> None:
         import_export_page()
     elif nav == "Settings":
         settings_page()
-    elif nav == "About Charlot":
+    elif nav == "About":
         about_page()
     else:
         home_page()
