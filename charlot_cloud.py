@@ -123,12 +123,12 @@ THEMES = {
 
 PAGES = [
     ("🏠", "Home"),
-    ("🔁", "Import/Export"),
     ("📚", "Dictionary"),
     ("🧠", "Review"),
     ("🗂️", "Cards"),
     ("📝", "Notes"),
     ("📘", "Grammar"),
+    ("🔁", "Import"),
     ("⚙️", "Settings"),
     ("❓", "About"),
 ]
@@ -420,6 +420,8 @@ div[data-testid="stTabs"] [aria-selected="true"] {{
 
 /* Desktop segmented nav (radio) */
 div[data-testid="stRadio"] > div {{
+  margin-left: 30px;
+  margin-right: 10px;
   background: linear-gradient(180deg, var(--surface), var(--surface2));
   border: 1px solid var(--line);
   border-radius: 30px;
@@ -2277,7 +2279,7 @@ def app_header(bp: str) -> None:
     with st.container():
         st.markdown(
             f"""
-<div class="card" style="padding:14px 14px; margin-bottom:8px;">
+<div class="card" style="padding:14px 14px; margin-bottom:8px; margin-left:30px;margin-right:28px">
   <div style="display:flex; justify-content:space-between; align-items:center; gap:12px; flex-wrap:wrap;">
     <div>
       <div style="display:flex; align-items:center; gap:10px;">
