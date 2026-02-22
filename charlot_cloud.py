@@ -128,7 +128,7 @@ PAGES = [
     ("🗂️", "Cards"),
     ("📝", "Notes"),
     ("📘", "Grammar"),
-    ("🔁", "Import/Export"),
+    ("🔁", "Import"),
     ("⚙️", "Settings"),
     ("❓", "About"),
 ]
@@ -2297,7 +2297,6 @@ def app_header(bp: str) -> None:
       {chip("🥕","XP", str(carrots))}
       {chip("🥐","Level", str(level))}
       {chip("🚬","Cig", str(cigarettes))}
-      {chip("🗂️","Cards", str(total_cards))}
     </div>
   </div>
 </div>
